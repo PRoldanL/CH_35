@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: linear-gradient(to left, rgb(85, 208, 241), white);
+}
+
+.container {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 450px;
+    border-radius: 10px;
+    background-image: url(../Images/persona.png);
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    box-shadow: 10px 5px 5px black;
+    border: solid 2px black;
+}
+
+.botones {
+    align-self: flex-start;
+    display: flex;
+    gap: 20px;
+}
+
+.google-boton {
+    background-color: rgba(255, 255, 255, 0);
+    border: solid 2px black;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.google-boton:hover {
+    opacity: 0.75;
+}
+
+.google-boton picture {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-boton picture img {
+    width: 75%;
+}
+
+.google-boton span {
+    color: black;
+    font-weight: 500;
+    padding: 15px;
+}
+
+
+.separator {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.separator span {
+    color: #8b8b8b;
+}
+
+.section-inputs {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label span {
+    font-weight: 700;
+}
+
+.section-inputs label input {
+    width: 80%;
+    background-color: #f3f3f400;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    border: solid 2px black;
+}
+label input {
+    width: 90%;
+    background-color: #f3f3f400;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+    border: solid 2px black;
+}
+
+label input:hover {
+    background-color: white;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #5afa10eb;
+}
+label input:focus {
+    background-color: white;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #5afa10eb;
+}
+
+.checkbox-label {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+}
+
+.checkbox-label span {
+    font-weight: 400;
+}
+
+.envia-boton {
+    background: linear-gradient(to right, rgb(85, 208, 241), white);
+    color: black;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.envia-boton:hover {
+    border: solid #5afa10eb;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    zoom: 1;
+    transition: 2s;
+}

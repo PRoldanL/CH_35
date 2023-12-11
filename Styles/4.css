@@ -1,0 +1,37 @@
+p{
+background-color: greenyellow;
+}
+
+#Rey{
+    color: blueviolet;
+
+}
+
+#René{
+    color: aqua
+
+}
+
+.CH35{
+    color: blue;
+}
+
+.Generation{
+background-color: tomato;
+width: auto; 
+height:auto;
+margin:auto;
+Padding: 50 px;
+border: solid white
+
+}
+
+div{
+
+    width: 200; 
+    height:200;
+    margin: 15px 0px;
+    Padding: 30 px;
+    border: solid blueviolet
+
+}
