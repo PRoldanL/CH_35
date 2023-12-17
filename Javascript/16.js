@@ -102,6 +102,17 @@ function power(P) {
 //     giveMeSomething("Bob Jane") ➞ "something Bob Jane"
 //     giveMeSomething("something") ➞ "something something"
 
+//Función retorno de "algo" en una oración aporte de Braulio
+function algo(frase){
+    return "Algo" + frase;
+}
+  //Ejemplo
+    var frase = " ocurrió aquel día."
+    var frase2 = algo(frase);
+    console.log("La frase es: " + frase2);
+
+
+
 // **7. Sum of Polygon Angles.**
 
 // Given an n-sided regular polygon n, return the total sum of internal angles (in degrees).
@@ -111,6 +122,19 @@ function power(P) {
 //     sumPolygon(3) ➞ 180
 //     sumPolygon(4) ➞ 360
 //     sumPolygon(6) ➞ 720
+
+function sumPoli(n) {
+
+    if (n < 3 || isNaN(n)) {
+    return "Valor invalido introduzca un numero mayor o igual a 3.";
+    }
+    const sum = (n - 2) * 180;
+    return sum;
+}
+    console.log(sumPoli(3)); 
+    console.log(sumPoli(4)); 
+    console.log(sumPoli(6)); 
+
 
 // **8. Convert Hours and Minutes into Seconds.**
 
@@ -123,12 +147,10 @@ function power(P) {
 //     convert(0, 0) ➞ 0
 
 
-
-//Función retorno de "algo" en una oración aporte de Braulio
-function algo(frase){
-    return "Algo" + frase;
-  }
-  //Ejemplo
-  var frase = " ocurrió aquel día."
-  var frase2 = algo(frase);
-  console.log("La frase es: " + frase2);
+function conversion(hr, min) {
+    const seg = (hr * 3600) + (min * 60);
+    return seg;
+}
+    console.log(conversion(1, 3)); 
+    console.log(conversion(2, 0)); 
+    console.log(conversion(0, 0)); 
